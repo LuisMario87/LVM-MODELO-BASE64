@@ -4,11 +4,11 @@ from image_to_base64 import image_to_base64
 
 def main():
     # Configuraciones
-    ruta_lvm = 'C:\\Users\\luism\\OneDrive\\Escritorio\\LVM-MODELO-BASE64\\testeo.lvm'  # Ajusta tu ruta
-    imagen_salida = 'C:\\Users\\luism\\OneDrive\\Escritorio\\LVM-MODELO-BASE64\\lvm-grafica\\grafica_generada.jpg'
-    modelo_yolo = 'C:\\Users\\luism\\OneDrive\\Escritorio\\LVM-MODELO-BASE64\\train3\\weights\\best.pt'
-    imagen_detectada = 'C:\\Users\\luism\\OneDrive\\Escritorio\\LVM-MODELO-BASE64\\grafica-modelo\\imagen_detectada.jpg'
-    archivo_base64 = 'C:\\Users\\luism\\OneDrive\\Escritorio\\LVM-MODELO-BASE64\\modelo-base64\\imagen_base64.txt'
+    ruta_lvm = 'ruta a tu lvm'  # Ajusta tu ruta
+    imagen_salida = 'ruta donde se guardara la grafica generada con el LVM'
+    modelo_yolo = 'ruta a carpeta modelo, usar \\best.pt de la carpeta'
+    imagen_detectada = 'ruta donde se guardara la imagen con las detecciones del modelo'
+    archivo_base64 = 'ruta donde se guardara el txt con la grafica en base64'
     
     # Paso 1: LVM ➔ Imagen
     lvm_to_graph(ruta_lvm, imagen_salida)
